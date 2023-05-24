@@ -1,0 +1,51 @@
+.join-squad__title {
+  @include font(28px, 32px, 500, #a184a5);
+  text-transform: uppercase;
+  text-align: center;
+
+  @include vp-767 {
+    @include font(22px, 28px, 500, #a184a5);
+  }
+}
+
+.join-squad__text {
+  @include font(18px, 32px, 500, #a184a5);
+  text-align: center;
+  width: 60%;
+  margin: 0 auto 30px;
+
+  @include vp-555 {
+    width: 100%;
+  }
+}
+
+.join-squad__list {
+  list-style-type: none;
+  width: 500px;
+  margin: 0 auto;
+  padding: 0;
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.join-squad__item {
+  @include font(18px, 22px, 700, #ff1c1c);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #393636;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @include vp-767 {
+    @include font(16px, 22px, 600, #ff1c1c);
+  }
+
+  @include vp-555 {
+    @include font(14px, 18px, 500, #ff1c1c);
+  }
+}

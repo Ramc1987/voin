@@ -1,0 +1,36 @@
+.contract__title {
+  @include font(28px, 32px, 500, #a184a5);
+  text-transform: uppercase;
+  text-align: center;
+
+  @include vp-767 {
+    @include font(22px, 28px, 500, #a184a5);
+  }
+}
+
+.contact__content-wrapper {
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #3f3f3f;
+
+  @include vp-767 {
+    width: 100%;
+    padding: 35px 10px;
+  }
+}
+
+.contract__list {
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+}
+
+.contract__item {
+  @include font(18px, 32px, 500, #ffffff);
+  margin-bottom: 20px;
+
+  @include vp-767 {
+    @include font(16px, 22px, 500, #ffffff);
+  }
+}
