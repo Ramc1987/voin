@@ -36,10 +36,6 @@
   @include vp-767 {
     @include font(17vw, 122%, 500, #ff1c1c);
   }
-
-  @include vp-374 {
-    @include font(17vw, 128%, 500, #ff1c1c);
-  }
 }
 
 .promo__logo {
