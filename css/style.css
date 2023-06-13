@@ -648,9 +648,9 @@ button,
   line-height: 145px;
   font-weight: 500;
   color: #ff1c1c;
+  font-family: "Chalkcyrillicfreehand", "Arial", sans-serif;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Chalkcyrillicfreehand", "Arial", sans-serif;
   margin: 0;
 }
 
@@ -1017,7 +1017,7 @@ button,
 
 @media (max-width: 374px) {
   .promo__title {
-    font-size: 22vw;
+    font-size: 17vw;
     line-height: 128%;
     font-weight: 500;
     color: #ff1c1c;
