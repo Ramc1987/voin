@@ -634,7 +634,7 @@ button,
 .promo__preface {
   font-size: 18px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: 600;
   color: #e8f0c1;
   letter-spacing: 0.04em;
   font-family: "RobotoCondensed", "Arial", sans-serif;
@@ -666,7 +666,7 @@ button,
 .fighters__subtitle {
   font-size: 28px;
   line-height: 32px;
-  font-weight: 500;
+  font-weight: 700;
   color: #a184a5;
   text-align: center;
 }
@@ -709,7 +709,7 @@ button,
 .join-squad__title {
   font-size: 28px;
   line-height: 32px;
-  font-weight: 500;
+  font-weight: 600;
   color: #a184a5;
   text-transform: uppercase;
   text-align: center;
@@ -741,7 +741,9 @@ button,
   text-transform: uppercase;
   padding: 10px 20px;
   border-radius: 10px;
-  background-color: #393636;
+  background-color: rgba(22, 22, 22, 0.3098039216);
+  -webkit-box-shadow: 0px 0px 18px -10px #ffffff;
+  box-shadow: 0px 0px 18px -10px #ffffff;
 }
 
 .join-squad__item:not(:last-child) {
@@ -782,49 +784,13 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: 50px;
-}
-
-.go-front__name {
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: 600;
-  color: #ff1c1c;
-  margin-left: 50px;
-}
-
-.go-front__name:nth-child(1) {
-  margin-bottom: 60px;
-}
-
-.go-front__name:nth-child(2) {
-  margin-top: 0;
-}
-
-.go-front__name-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.go-front__list-phone {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.go-front__item-phone:nth-child(3) {
-  margin-bottom: 10px;
 }
 
 .go-front__link-phone {
@@ -833,6 +799,15 @@ button,
   font-weight: 500;
   color: #ffffff;
   letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.go-front__link-phone span {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ff5454;
 }
 
 .contract__title {
@@ -928,6 +903,7 @@ button,
     background: -webkit-gradient(linear, left top, right top, from(rgba(96, 128, 83, 0.75)), to(rgba(0, 0, 0, 0)));
     background: -o-linear-gradient(left, rgba(96, 128, 83, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
     background: linear-gradient(90deg, rgba(96, 128, 83, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
+    min-height: 50px;
   }
 
   .fighters__text {
@@ -940,7 +916,7 @@ button,
   .join-squad__title {
     font-size: 22px;
     line-height: 28px;
-    font-weight: 500;
+    font-weight: 600;
     color: #a184a5;
   }
 
@@ -956,12 +932,12 @@ button,
   }
 
   .go-front .go-front__container {
-    padding: 30px 15px;
+    padding: 30px 10px;
   }
 
   .go-front__wrapper-content {
     width: 100%;
-    padding: 10px;
+    padding: 10px 5px;
     padding-bottom: 30px;
   }
 
@@ -975,20 +951,16 @@ button,
   }
 
   .go-front__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin-bottom: 20px;
   }
 
-  .go-front__name {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 600;
-    color: #ff1c1c;
-    margin-left: 30px;
-  }
-
   .go-front__link-phone {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     color: #ffffff;
     letter-spacing: 0.03em;
@@ -1028,6 +1000,10 @@ button,
   }
 
   .join-squad__text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #a184a5;
     width: 100%;
   }
 
