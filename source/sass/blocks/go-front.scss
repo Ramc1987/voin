@@ -2,7 +2,7 @@
   padding: 50px;
 
   @include vp-767 {
-    padding: 30px 15px;
+    padding: 30px 10px;
   }
 }
 
@@ -17,7 +17,7 @@
 
   @include vp-767 {
     width: 100%;
-    padding: 10px;
+    padding: 10px 5px;
     padding-bottom: 30px;
   }
 }
@@ -44,58 +44,28 @@
 
 .go-front__contacts {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 50px;
 
   @include vp-767 {
+    flex-direction: column;
     margin-bottom: 20px;
-  }
-}
-
-.go-front__name {
-  @include font(20px, 32px, 600, #ff1c1c);
-
-  margin-left: 50px;
-
-  &:nth-child(1) {
-    margin-bottom: 60px;
-  }
-
-  &:nth-child(2) {
-    margin-top: 0;
-  }
-
-  @include vp-767 {
-    // width: 80%;
-    @include font(16px, 22px, 600, #ff1c1c);
-    margin-left: 30px;
-  }
-}
-
-.go-front__name-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.go-front__list-phone {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.go-front__item-phone {
-  &:nth-child(3) {
-    margin-bottom: 10px;
   }
 }
 
 .go-front__link-phone {
   @include font(20px, 28px, 500, #ffffff);
   letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 15px;
 
   @include vp-767 {
-    @include font(14px, 18px, 500, #ffffff);
+    @include font(16px, 20px, 500, #ffffff);
     letter-spacing: 0.03em;
   }
+}
+
+.go-front__link-phone span {
+  @include font(18px, 24px, 500, #ff5454);
 }

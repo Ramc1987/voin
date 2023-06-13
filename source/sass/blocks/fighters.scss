@@ -9,7 +9,7 @@
 }
 
 .fighters__subtitle {
-  @include font(28px, 32px, 500, #a184a5);
+  @include font(28px, 32px, 700, #a184a5);
   text-align: center;
 }
 
@@ -39,6 +39,7 @@
 
   @include vp-767 {
     background: linear-gradient(90deg, rgba(96, 128, 83, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
+    min-height: 50px;
   }
 }
 
