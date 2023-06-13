@@ -27,9 +27,9 @@
 
 .promo__title {
   @include font(135px, 145px, 500, #ff1c1c);
+  font-family: "Chalkcyrillicfreehand", "Arial", sans-serif;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Chalkcyrillicfreehand", "Arial", sans-serif;
 
   margin: 0;
 
@@ -38,7 +38,7 @@
   }
 
   @include vp-374 {
-    @include font(22vw, 128%, 500, #ff1c1c);
+    @include font(17vw, 128%, 500, #ff1c1c);
   }
 }
 
