@@ -34,3 +34,23 @@
     @include font(16px, 22px, 500, #ffffff);
   }
 }
+
+.contract__text {
+  @include font(20px, 32px, 500, #ea3e3e);
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  @include vp-767 {
+    @include font(16px, 22px, 500, #ea3e3e);
+  }
+}
+
+.contract__text a {
+  @include font(22px, 32px, 500, #eac83e);
+  margin-bottom: 20px;
+  text-align: center;
+
+  @include vp-767 {
+    @include font(16px, 22px, 500, #eac83e);
+  }
+}
