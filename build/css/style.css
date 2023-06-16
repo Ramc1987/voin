@@ -1014,12 +1014,3 @@ button,
     color: #ff1c1c;
   }
 }
-
-@media (max-width: 374px) {
-  .promo__title {
-    font-size: 17vw;
-    line-height: 128%;
-    font-weight: 500;
-    color: #ff1c1c;
-  }
-}
